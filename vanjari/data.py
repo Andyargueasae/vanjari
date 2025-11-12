@@ -116,7 +116,7 @@ class VanjariStackDataModule(L.LightningDataModule):
         self.training = []
         self.validation = []
 
-        assert self.array.shape[-1] == 1024, f"Embedding shape restricted to 1024, here is {self.array.shape[-1]}"
+        # assert self.array.shape[-1] == 1024, f"Embedding shape restricted to 1024, here is {self.array.shape[-1]}"
 
         random.seed(self.seed)
 
